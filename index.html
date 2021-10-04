@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>D3 Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+          font-family: 'Didact Gothic', sans-serif;
+          margin: 0 auto;
+        }
+        div.map {
+          margin: 50px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        h1 {
+          background: rgba(36, 37, 38, 1);
+          letter-spacing: 2.5px;
+          padding: 20px 0;
+          color: white;
+          border-radius: 4px;
+          text-align: center;
+        }
+        div.footer {
+          margin: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: rgba(36, 37, 38, 1);
+          letter-spacing: 2.5px;
+          padding: 20px 0;
+          color: white;
+          border-radius: 4px;
+          text-align: center;
+        }
+        span {
+          letter-spacing: 2px;
+          font-weight: 200;
+          color: #8bd6b8;
+        }
+        .material-icons {
+          padding: 0 5px;
+        }
+        svg {
+          background: rgba(36, 37, 38, 1);
+          border-radius: 10px;
+        }
+        circle {
+          fill: #8bd6b8;
+          opacity: .2;
+        }
+        circle:hover {
+          fill: #5d43c6;
+          opacity: 1;
+        }
+        div.tooltip {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 85px;
+          height: 40px;
+          padding: 4px;
+          font-size: 11px;
+          background: #dee4ed;
+          border: 0px;
+          border-radius: 8px;
+          pointer-events: none;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Blitsy Orders USA <span>| March 12 - May 6</span></h1>
+    </header>
+    <div class="map"></div>
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <div class="footer">made with <span class="material-icons">favorite</span> by Becca Kinkoph</div>
+  </footer>
+</html>
